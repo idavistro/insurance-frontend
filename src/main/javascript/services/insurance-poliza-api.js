@@ -5,7 +5,7 @@ angular.module('InsurancePolizaAPI', ['AjaxService'])
 	
 	instance.brmsURL = 'http://fis.apps.mikeintoch.systems/rest';
 	instance.ccURL = 'http://creditcard.apps.mikeintoch.systems/rest'
-	instance.marcasURL = 'http://marcas.apps.mikeintoch.systems/api';
+	instance.marcasURL = 'http://marcas:8080/api';
 	instance.pdfURL = 'http://pdf.apps.mikeintoch.systems/api';
 	
 	instance.calcularPrecio = function (policyRequest, success, error){
