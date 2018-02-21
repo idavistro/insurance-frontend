@@ -3,10 +3,10 @@ angular.module('InsurancePolizaAPI', ['AjaxService'])
 .factory('PolizaAPI', function(Ajax) {
 	var instance = {};
 	
-	instance.brmsURL = 'http://fis.apps.mikeintoch.systems/rest';
-	instance.ccURL = 'http://creditcard.apps.mikeintoch.systems/rest'
-	instance.marcasURL = 'http://marcas.apps.mikeintoch.systems/api';
-	instance.pdfURL = 'http://pdf.apps.mikeintoch.systems/api';
+	instance.brmsURL = 'http://fis.openshift37rh.flnet.org/rest';
+	instance.ccURL = 'http://creditcard.openshift37rh.flnet.org/rest'
+	instance.marcasURL = 'http://marcas.openshift37rh.flnet.org/api';
+	instance.pdfURL = 'http://pdf.openshift37rh.flnet.org/api';
 	
 	instance.calcularPrecio = function (policyRequest, success, error){
 		var rest = instance.brmsURL + '/book';
